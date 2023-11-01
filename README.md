@@ -10,6 +10,10 @@ Lab 5's objective is to physically build both QAM and QPSK waveforms. The lab us
 Quadrature Phase Shift Keying is the act of modulating information through the act of altering the phase of a signal based on a 2-baud binary value. In this lab, there are two bauds per bit due to the 
 Machester Encoding method used. When combined with QPSK, Manchester encoding effectively creates a BPSK waveform.
 
+A typical QPSK constellation can be found below. The image was taken from ETSI EN 302 307-1.
+
+![Image](https://github.com/Ryankearns9/DigComm_Lab4/blob/main/imgs/picture_1.png)
+
 ### Manchester Encoding
 Manchester Encoding is the act of encoding a bit by transitioning a bit from either high to low or low to high. It is assumed that the Emona Instruments follows IEEE standards and thus, encoded bits 
 follow the below table for encoding. Note that this implies that a low to high voltage mid bit period transition implies a logical 1. Conversely a high to low voltage transition in the middle of a bit 
@@ -21,3 +25,4 @@ period implies a logcal 0.
 | 0 end      | low          |
 | 1 start    | low          |
 | 1 end      | high         |
+
