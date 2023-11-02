@@ -33,7 +33,23 @@ The implication of this is that a positive frequency at a bit period transition 
 The below questions are posed by the Emona Instruments labs. Answer correspond to the related question.
 
 #### Question 1
-The bit rate at the Oscilliscope, as seen in the below figure, is half that out of the Sequence Generator. This is because the Serial Output takes an input an will seperate even an odd bit indexes into the 
-Channel 1 and Channel 2 outputs every other clock cycle.
+The bit rate at the Oscilliscope, as seen in the below figure, is half that out of the Sequence Generator. This is because the Serial Output takes an input and will seperate even and odd bit indexes 
+into the Channel 1 and Channel 2 outputs every other clock cycle. As seen in the below figure, Channel 1 and Channel 2 are half a sample period off from each other. 
 
 ![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_1.png)
+
+#### Question 2
+The Multiplier output spectrum is shown in the below figure. The two blue peaks in the FFT output is distinctive of BPSK.
+
+![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_2b.png)
+
+In the below figure, we can further distinguish this as BPSK because the 180 degree phase shifts at bit boundaries.
+
+![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_2a.png)
+
+#### Question 3
+The figures for question 3 are shown below. This is the imaginary portion of the waveform. mentioned in Question 2. It is also a BPSK. As with the previous question, the two peaks of in the FFT suggest it is BPSK.
+Further, the 180 degree change at bit boundaries further suggest that this is a BPSK waveform.
+
+![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_3a.png)
+![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_3b.png)
