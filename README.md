@@ -69,7 +69,9 @@ Using the Identity:
 
 $sin(\alpha) + sin(\beta)=sin((\alpha + \beta)/2)cos((\alpha - \beta)/2)$
 
-where $\alpha = \omega t + \phi b_0$ and $\beta=\omega t + \phi b_1 - \pi /2$. Therefore, $\alpha+\beta=2 \omega t + \phi b_0 + \phi b_1 + \pi/2$. $\alpha - \beta=\pi/2 +\phi b_0 -\phi b_1$.
+where $\alpha = \omega t + \phi b_0$ and $\beta=\omega t + \phi b_1 - \pi /2$. Therefore, $\alpha+\beta=2 \omega t + \phi b_0 + \phi b_1 + \pi/2$. Also, $\alpha - \beta=\pi/2 +\phi b_0 -\phi b_1$.
+
+Our equation is thus, $sin(\omega t + (\phi b_0) /2 - (\phi b_1) /2 - \pi /4)$ which is a single sine wave.
 
 
 ![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_3a.png)
