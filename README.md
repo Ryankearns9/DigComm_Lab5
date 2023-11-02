@@ -61,7 +61,9 @@ the two distinct lobes seen in BPSK.
 #### Question 5
 The waveform generated is a single sine wave because the sine and the cosine are added together. This creates the below trig.
 
-$sin(\omega t) + cos(\omega t)$
+$sin(\omega t + \phi b0) + cos(\omega t + \phi b1)$
+$sin(\omega t + \phi b0) + sin(\omega t + \phi b1 - \pi /2)$
+
 
 ![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_3b.png)
 
