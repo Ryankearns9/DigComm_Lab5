@@ -56,14 +56,15 @@ Further, the 180 degree change at bit boundaries further suggest that this is a 
 According to theory, the signal present in the below images is QPSK. This can be seen by the more subtle phase transitions in the below time domain plot. Further, the FFT is a single lobe rather than 
 the two distinct lobes seen in BPSK.
 
-![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_3a.png)
+![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_3b.png)
 
 #### Question 5
 The waveform generated is a single sine wave because the sine and the cosine are added together. This creates the below trig.
 
 $sin(\omega t + \phi b0) + cos(\omega t + \phi b1)$
+
 $sin(\omega t + \phi b0) + sin(\omega t + \phi b1 - \pi /2)$
 
 
-![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_3b.png)
+![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_3a.png)
 
