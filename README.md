@@ -48,8 +48,20 @@ In the below figure, we can further distinguish this as BPSK because the 180 deg
 ![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_2a.png)
 
 #### Question 3
-The figures for question 3 are shown below. This is the imaginary portion of the waveform. mentioned in Question 2. It is also a BPSK. As with the previous question, the two peaks of in the FFT suggest it is BPSK.
+This is the imaginary portion of the waveform. mentioned in Question 2. It is also a BPSK. As with the previous question, the two peaks of in the FFT suggest it is BPSK.
 Further, the 180 degree change at bit boundaries further suggest that this is a BPSK waveform.
 
+
+#### Question 4
+According to theory, the signal present in the below images is QPSK. This can be seen by the more subtle phase transitions in the below time domain plot. Further, the FFT is a single lobe rather than 
+the two distinct lobes seen in BPSK.
+
 ![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_3a.png)
+
+#### Question 5
+The waveform generated is a single sine wave because the sine and the cosine are added together. This creates the below trig.
+
+$sin(\omega t) + cos(\omega t)$
+
 ![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_3b.png)
+
