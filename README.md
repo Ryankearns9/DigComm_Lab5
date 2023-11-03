@@ -97,9 +97,9 @@ $f(s) = sin(\omega t + \phi b_0)sin(\omega t + \pi) + cos(\omega t + \phi b_1)si
 $f(s) = sin(\omega t + \phi b_0)sin(-\omega t) + cos(\omega t + \phi b_1)sin(-\omega t)$
 
 We know the following identities
-$sin(\Alpha ) sin(\Beta ) = (1/2) [ cos (\alpha - \beta) - cos (\alpha + \beta) ]$
+$sin(\alpha ) sin(\beta ) = (1/2) [ cos (\alpha - \beta) - cos (\alpha + \beta) ]$
 
-$cos(\Alpha ) sin(\Beta ) = (1/2) [ sin (\alpha + \beta) - sin (\alpha - \beta) ]$
+$cos(\alpha ) sin(\beta ) = (1/2) [ sin (\alpha + \beta) - sin (\alpha - \beta) ]$
 
 
 
