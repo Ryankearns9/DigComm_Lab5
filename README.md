@@ -71,8 +71,39 @@ $sin(\alpha) + sin(\beta)=sin((\alpha + \beta)/2)cos((\alpha - \beta)/2)$
 
 where $\alpha = \omega t + \phi b_0$ and $\beta=\omega t + \phi b_1 - \pi /2$. Therefore, $\alpha+\beta=2 \omega t + \phi b_0 + \phi b_1 + \pi/2$. Also, $\alpha - \beta=\pi/2 +\phi b_0 -\phi b_1$.
 
-Our equation is thus, $sin(\omega t + (\phi b_0) /2 - (\phi b_1) /2 - \pi /4)$ which is a single sine wave.
+Our equation is thus, $sin(\omega t + (\phi b_0) /2 + (\phi b_1) /2 - \pi /4)cos(\pi/4 +\phi b_0/2 -\phi b_1/2)$ which is a single sine wave with a amplitude offset defined by the sine wave.
 
 
 ![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_3a.png)
+
+#### Question 6
+Two examples of multi-level amplitudes can be found below. As can be seen, there are 4 distict ampltidue levels when the phase is offset. Neither the sine or the cosine are fully canceled out when the 
+phase is offset like this. Therfore, the the amplitudes for both are being added against eachother. The percent of each amplitude which is included is based on how offset the phase is.
+
+![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_4b.png)
+![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_4c.png)
+
+#### Question 7
+The output from the comparator is shown below. The explanation for what we are seeing can be explained by the following trigonometry:
+
+Our original signal:
+
+$f(s) = sin(\omega t + \phi b_0) + cos(\omega t + \phi b_1)$
+
+When we multiply by our original sine signal offset by 180 degrees, we get:
+
+$f(s) = sin(\omega t + \phi b_0)sin(\omega t + \pi) + cos(\omega t + \phi b_1)sin(\omega t + \pi)$
+
+$f(s) = sin(\omega t + \phi b_0)sin(-\omega t) + cos(\omega t + \phi b_1)sin(-\omega t)$
+
+We know the following identities
+$sin(\Alpha ) sin(\Beta ) = (1/2) [ cos (\Alpha - \Beta) - cos (\Alpha + \Beta) ]$
+
+$cos(\Alpha ) sin(\Beta ) = (1/2) [ sin (\Alpha + \Beta) - sin (\Alpha - \Beta) ]$
+
+
+
+
+
+![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_5a.png)
 
