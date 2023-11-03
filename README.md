@@ -112,14 +112,32 @@ $cos(\alpha ) sin(\beta ) = (1/2) [ sin (\omega t + \phi b_1 - \omega t) - sin (
 
 $cos(\alpha ) sin(\beta ) = (1/2) [ sin (\phi b_1 ) - sin (2 \omega t + \phi b_1 ) ]$
 
-Note that $phi$ is equal to $\pi$ radians. Therefore, the first term becomes $cos(+/- \pi)$. The second term becomes $sin(+/- \pi)$
+Note that $phi$ is equal to $\pi$ radians. Therefore, the first term becomes $cos(+/- \pi)$. The second term becomes $sin(+/- \pi)$. (Note that we remove the $2 \omega$ term is filtered out by the LPF).
+Therefore, the first term is being kept while the second term is going to zero.
 
-
-
-
-
-
+That is why when the phase shifter is set to 0 degree phase shift, we are getting the $PSK_I$ term. This can be confirmed by the below image. It is important to make note of the adder applying a 180 
+degree phase shift to our signal
 
 
 ![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QPSK/picture_5a.png)
 
+
+#### Question 8
+By following the logic of the previous question, we can see the local carrier signal and the carrier signal are 270 degrees out of phase. The addition module creates a 180 degree phase shift for the 
+carrier signal.
+
+#### Question 9
+The demodulator is only one half of the full QPSK reciever because only the $PKI_I$ or the $PKI_Q$ are being preserved by the sine wave. To get both parts of the original signal back out, you must 
+have two different sine waves with the appropriate phase offset.
+
+## QAM
+Quadrature Amplitude Modulation is the act of combining two different amplitude modulated signals through the use of modulating one with a cosine and the other with a sine. These signals are then 
+added together. Because these signals are orthoganal, the original signal can be recovered.
+
+### Questions
+The below questions are posed by the Emona Instruments labs. Answer correspond to the related question.
+
+#### Question 1
+The below image is our output signal. 
+
+![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QAM/picture_1.png)
