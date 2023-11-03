@@ -173,3 +173,78 @@ Our original signals will be notated as $f_1% for the 1kHz signal and $f_2$ for 
 $f(s) = (-f_1 sin(\omega t) - f_2 cos(\omega t)) sin(\omega t + \pi)$
 
 Note the negative is because addition results in a negative voltage
+
+As with Question 7 above, the first part becomes:
+
+$ -(f_1 /2) [ cos (\omega - \omega + \pi) - cos (\omega + \omega - \pi) ]$
+
+$ -(f_1 /2) [ cos (\pi) - cos (2 \omega - \pi) ]$
+
+This signal is filtered out by the RC filtered
+
+The second part becomes:
+
+$ -(f_2 /2) [ sin (\omega + \omega + \pi) - sin (\omega - \omega - \pi) ]$
+
+
+$ -(f_2 /2) [ sin (2 \omega + \pi) - sin ( - \pi) ]$
+
+$ -(f_2 /2) [ sin (2 \omega + \pi) + 1 ]$
+
+The upper portion is filtered out by the RC filter and we are left with:
+
+$ -(f_2 /2)$
+
+#### Question 7
+
+See the above discussion for the solution. Particularly the lower section
+
+#### Question 8
+
+In this example, we are adding an additional $pi/2$ term to our signal. Therefore, our math becomes:
+
+$ -(f_1 /2) [ cos (\omega - \omega - 3\pi/4) - cos (\omega + \omega + 3\pi/4) ]$
+
+$ -(f_1 /2) [ cos (- 3\pi/4) - cos (2 \omega + 3\pi/4) ]$
+
+The RC filter removes the upper section and we are left with
+
+$-(f_1 /2)$
+
+The second signal is:
+
+$cos(\alpha ) sin(\beta ) = (1/2) [ sin (\omega + \omega + 3 \pi /4) - sin (\omega - \omega - 3 \pi /4) ]$
+
+$cos(\alpha ) sin(\beta ) = (1/2) [ sin (2 \omega + 3 \pi /4) - sin (- 3 \pi /4) ]$
+
+$cos(\alpha ) sin(\beta ) = (1/2) [ sin (2 \omega + 3 \pi /4) ]$
+
+This signal will be removed by the RC filter.
+
+Therefore we are left with just the first signal.
+
+#### Question 9.
+
+See the discussion in Question 8 above. Particular attention to the second half of the question.
+
+#### Question 10
+
+Message 1 appears to be 20dB larger than message 2. That is to say that in the below image, we see message 1 at 0dB but message 2 is -20dB
+
+![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QAM/picture_6a.png)
+
+This is likely a result of small phase differences between the ideal phase of the sine wave and that which we have acheived by hand. A tighter
+ tuning of the phase shifter should further reduce this signal.
+ 
+#### Question 11
+At the reciever this extra signal is noise. This means there is increased noise for the reciever lowering the SNR. However, because this signal is not white noise, 
+in real terms, the reciever will still hear the rejected signal when listening to the demodulated signal. This will make it more difficult to understand the original signal.
+
+#### Question 12
+
+The original signal is not perfectly in phase with our demodulated signal. This is expected because there is group delay caused by the RC filter. This group delay results in a phase change. Further,
+the addition module has resulted in a negative output voltage. Finally, small group delay effects will be caused by the other portions of the signal path.
+
+#### Question 13
+This system would not work. In the above math, it relies on the idea of either the sine or the cosine portion going to zero. In this proposed solution, rather than being zero, all components would
+maintain amplitude. This means we would never fully reject the other two signals. They may be attenuated but would still be loud enough to be a signficant energy contributer.
