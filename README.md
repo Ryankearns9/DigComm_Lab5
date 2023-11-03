@@ -97,6 +97,7 @@ $f(s) = sin(\omega t + \phi b_0)sin(\omega t + \pi) + cos(\omega t + \phi b_1)si
 $f(s) = sin(\omega t + \phi b_0)sin(-\omega t) + cos(\omega t + \phi b_1)sin(-\omega t)$
 
 We know the following identities
+
 $sin(\alpha ) sin(\beta ) = (1/2) [ cos (\alpha - \beta) - cos (\alpha + \beta) ]$
 
 $cos(\alpha ) sin(\beta ) = (1/2) [ sin (\alpha + \beta) - sin (\alpha - \beta) ]$
@@ -138,6 +139,37 @@ added together. Because these signals are orthoganal, the original signal can be
 The below questions are posed by the Emona Instruments labs. Answer correspond to the related question.
 
 #### Question 1
-The below image is our output signal. 
+The below image is our output signal. There are two main ways that we can tell this is a DSB-SC (double sideband supressed carrier) signal. First, the time domain shows the modulated signal amplitude
+ following our carier signal. This is typical of amplitude modulation. We can further inspect the Fourier Domain to see that the signal is reflected around a cenetral carrier point. However, there is 
+ no carrier present. Therefore, this must be carrier supressed.
 
 ![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QAM/picture_1.png)
+
+#### Question 2
+There are two significant spectral components. One at 101kHz and one at 99 kHz. These our our original signal reflected around the carrier signal.
+
+#### Question 3
+In the below figure, we see our $DSBSC_!$ Signal. In his case, there are two significant spectral components. One is at 102kHz and the other is at 98kHz.
+
+![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QAM/picture_2.png)
+
+#### Question 4
+According to theory, we should have a quadrature amplitude modulated signal. This is confirmed in the below figure
+
+![Image](https://github.com/Ryankearns9/DigComm_Lab5/blob/main/imgs/Lab_5_QAM/picture_3.png)
+
+#### Question 5
+On the output, we expect to see a tone at 98kHz, 99kHz, 101kHz, and 102 kHz. These are the same locations we say on each of the inputs
+
+#### Question 6
+For this question, we must use the identities listed in Question 7 above for QPSK:
+
+$sin(\alpha ) sin(\beta ) = (1/2) [ cos (\alpha - \beta) - cos (\alpha + \beta) ]$
+
+$cos(\alpha ) sin(\beta ) = (1/2) [ sin (\alpha + \beta) - sin (\alpha - \beta) ]$
+
+Our original signals will be notated as $f_1% for the 1kHz signal and $f_2$ for the 2kHz signal. Therefore, our signal at this point can be defined as:
+
+$f(s) = (-f_1 sin(\omega t) - f_2 cos(\omega t)) sin(\omega t + \pi)$
+
+Note the negative is because addition results in a negative voltage
