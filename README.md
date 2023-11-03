@@ -101,6 +101,22 @@ $sin(\alpha ) sin(\beta ) = (1/2) [ cos (\alpha - \beta) - cos (\alpha + \beta) 
 
 $cos(\alpha ) sin(\beta ) = (1/2) [ sin (\alpha + \beta) - sin (\alpha - \beta) ]$
 
+Therefore, for the first part of our eqauation we have:
+
+$(1/2) [ cos (\omega t + \phi b_0 +\omega t) - cos (\omega t + \phi b_0 - \omega t) ]$
+
+$(1/2) [ cos (2*\omega t + \phi b_0) - cos (\phi b_0) ]$
+
+For the second part we have:
+$cos(\alpha ) sin(\beta ) = (1/2) [ sin (\omega t + \phi b_1 - \omega t) - sin (\omega t + \phi b_1 + \omega t) ]$
+
+$cos(\alpha ) sin(\beta ) = (1/2) [ sin (\phi b_1 ) - sin (2 \omega t + \phi b_1 ) ]$
+
+Note that $phi$ is equal to $\pi$ radians. Therefore, the first term becomes $cos(+/- \pi)$. The second term becomes $sin(+/- \pi)$
+
+
+
+
 
 
 
